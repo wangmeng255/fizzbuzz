@@ -1,8 +1,7 @@
 $(document).ready(function() {
 	$("#fizzbuzz").click(function () {
 		var n = parseInt($("#num").val()); 
-		console.log(n);
-		if(!n) alert("please input a number");
+		if($("#num").val()!=String(n) || !n) alert("please input an integer");
 		fizzbuzz(n);
 	});
 	function fizzbuzz(n) {
